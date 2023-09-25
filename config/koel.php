@@ -138,4 +138,9 @@ return [
         'sponsor_open_collective_url' => 'https://opencollective.com/koel',
         'demo' => env('KOEL_DEMO', false),
     ],
+
+    'storage' => [
+        'method' => env('STORAGE_METHOD', 'local'),
+        'bucket' => env('AWS_BUCKET')
+    ]
 ];
